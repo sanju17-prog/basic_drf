@@ -14,7 +14,7 @@ This project is a Django-based REST API for managing student data. It supports C
   {
     "id": 1
   }
- ```
+    ```
 - If an `id` is provided, the API returns data for the specific student.
 - If no `id` is provided, the API returns all student data.
 
