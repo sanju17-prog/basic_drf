@@ -7,6 +7,10 @@ class StudentSerializer(serializers.Serializer):
     roll = serializers.IntegerField()
     city = serializers.CharField()
 
+    # object level validation
+    def validate(self, attrs):
+        return super().validate(attrs)
+    
     # field level validation
     def validate_roll(self, roll):
         roll_obj = Student.objects.filter(roll = roll)
