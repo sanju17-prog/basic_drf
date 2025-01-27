@@ -7,6 +7,15 @@ class StudentSerializer(serializers.Serializer):
     roll = serializers.IntegerField()
     city = serializers.CharField()
 
+    # field level validation
+    def validate_roll(self, roll):
+        roll_obj = Student.objects.filter(roll = roll)
+        if roll_obj.exists():
+            raise serializers.ValidationError('Roll Number Should be Unique')
+        elif roll >= 200:
+            raise serializers.ValidationError('Seat Full')
+        return roll
+
     def create(self, validated_data):
         return Student.objects.create(**validated_data)
     

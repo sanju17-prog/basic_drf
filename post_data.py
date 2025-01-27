@@ -1,14 +1,14 @@
 import requests
 import json
 
-URL = "http://127.0.0.1:8000/create_student/"
+URL = "http://127.0.0.1:8000/student_api/"
 
 def post_data():
     data = {
-        'name': 'Veena',
+        'name': 'Leena',
         'age': 23,
         'roll': 80,
-        'city': 'Chennai'
+        'city': 'Auranagabad'
     }
 
     json_data = json.dumps(data)
