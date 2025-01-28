@@ -1,12 +1,12 @@
 import requests
 import json
 
-URL = "http://127.0.0.1:8000/student_api/"
+URL = "http://127.0.0.1:8000/student_drf/student_api/"
 
 def update_data():
     data = {
-        'id': 8,
-        'name': 'Veena',
+        'id': 3,
+        'name': 'Rina',
         'age': 29,
         'city': 'Chennai',
         'roll': 70,
