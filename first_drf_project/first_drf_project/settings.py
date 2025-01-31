@@ -45,6 +45,7 @@ EXTERNAL_APPS = [
     'student_drf_extra',
     'function_based_api_view',
     'class_based_views',
+    'generic_views',
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS

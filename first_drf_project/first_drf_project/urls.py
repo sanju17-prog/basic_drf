@@ -22,5 +22,6 @@ urlpatterns = [
     path('student_drf/', include("student_drf_extra.urls")),
     path('fn_api/', include("function_based_api_view.urls")),
     path('class_api/', include("class_based_views.urls")),
+    path('generic_api/', include("generic_views.urls")),
     path('admin/', admin.site.urls),
 ]
