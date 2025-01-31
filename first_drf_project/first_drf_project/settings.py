@@ -46,6 +46,7 @@ EXTERNAL_APPS = [
     'function_based_api_view',
     'class_based_views',
     'generic_views',
+    'generic_api'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
