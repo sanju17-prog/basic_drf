@@ -47,7 +47,8 @@ EXTERNAL_APPS = [
     'class_based_views',
     'generic_views',
     'generic_api',
-    'viewsets'
+    'viewsets',
+    'basic_authentication',
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS

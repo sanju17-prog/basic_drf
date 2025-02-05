@@ -26,5 +26,6 @@ urlpatterns = [
     path('generic_api/', include("generic_api.urls")),
     path('viewsets/', include("viewsets.urls")),
     path('model_viewsets/', include("model_viewsets.urls")),
+    path('basic_auth/', include("basic_authentication.urls")),
     path('admin/', admin.site.urls),
 ]
