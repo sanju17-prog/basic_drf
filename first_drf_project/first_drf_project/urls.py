@@ -27,5 +27,6 @@ urlpatterns = [
     path('viewsets/', include("viewsets.urls")),
     path('model_viewsets/', include("model_viewsets.urls")),
     path('basic_auth/', include("basic_authentication.urls")),
+    path('session_auth/', include("session_authentication.urls")),
     path('admin/', admin.site.urls),
 ]
