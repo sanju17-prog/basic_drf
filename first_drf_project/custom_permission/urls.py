@@ -8,5 +8,5 @@ routers.register("student_viewset",viewset = StudentViewSet, basename = "student
 
 urlpatterns = [
     path("", include(routers.urls)),
-    path("auth/", include('rest_framework.urls', namespace='rest_framework'))
+    path("auth/", include('rest_framework.urls', namespace='rest_framework_auth'))
 ]

@@ -29,5 +29,6 @@ urlpatterns = [
     path('basic_auth/', include("basic_authentication.urls")),
     path('session_auth/', include("session_authentication.urls")),
     path('custom_perm/', include("custom_permission.urls")),
+    path('fn_based_auth/', include("fn_based_authentication.urls")),
     path('admin/', admin.site.urls),
 ]
