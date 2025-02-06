@@ -1,7 +1,33 @@
-# basic_drf
-# Student API
+# Student API - Django REST Framework (DRF)
 
 This project is a Django-based REST API for managing student data. It supports CRUD operations (Create, Read, Update, Delete) using HTTP methods like `GET`, `POST`, `PATCH`, `PUT`, and `DELETE`.
+
+---
+
+## Project Structure
+```bash 
+first_drf_project/
+|-- basic_authentication/         # Implements authentication using Django's built-in authentication system
+|-- class_based_views/            # Contains CBVs (Class-Based Views) for handling student API requests
+|-- custom_permission/            # Custom permissions for restricting API access
+|-- first_drf_project/            # Core Django project settings and configurations
+|   |-- __pycache__/              # Compiled Python files for optimization
+|   |-- __init__.py               # Marks this directory as a Python package
+|   |-- asgi.py                   # ASGI entry point for the project
+|   |-- settings.py               # Project settings, including installed apps, middleware, and database configuration
+|   |-- urls.py                   # URL routing for the project
+|   |-- wsgi.py                   # WSGI entry point for the project
+|-- function_based_api_view/      # Implements API using function-based views (FBVs)
+|-- generic_api/                  # Contains generic API views for simplified CRUD operations
+|-- generic_views/                # Implements generic class-based views
+|-- model_viewsets/               # Viewsets implementation using Django REST Framework (DRF)
+|-- session_authentication/       # Implements session-based authentication
+|-- student_drf_extra/            # Additional utilities related to student APIs
+|-- students/                     # Contains models, serializers, and views for Student API
+|-- viewsets/                     # Implements ViewSets for handling API endpoints
+|-- db.sqlite3                     # SQLite database storing application data
+|-- manage.py                      # Django's command-line utility for administrative tasks
+```
 
 ---
 
@@ -18,7 +44,7 @@ This project is a Django-based REST API for managing student data. It supports C
 - If an `id` is provided, the API returns data for the specific student.
 - If no `id` is provided, the API returns all student data.
 
-### 2. `POST` - Retrieve Student Data
+### 2. `POST` - Create a New Student Entry
 - **URL**: `/student_api/`
 - **Request Body**:
 ```json
@@ -71,6 +97,8 @@ This project is a Django-based REST API for managing student data. It supports C
 
 ### Notes
 - **CSRF Exemption:** The `@csrf_exempt` decorator is used to allow external requests.
+- **Authentication:** Supports basic authentication, session authentication, and custom permissions.
+- **Modular Design:** Organized into multiple Django apps for better maintainability.
 
 ---
 
@@ -138,3 +166,5 @@ python manage.py runserver
 ```bash
 http://127.0.0.1:8000/
 ```
+
+---
