@@ -50,6 +50,7 @@ EXTERNAL_APPS = [
     'viewsets',
     'basic_authentication',
     'session_authentication',
+    'custom_permission',
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
