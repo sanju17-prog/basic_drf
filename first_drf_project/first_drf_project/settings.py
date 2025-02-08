@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
 EXTERNAL_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
     'students',
     'student_drf_extra',
     'function_based_api_view',
@@ -52,6 +53,7 @@ EXTERNAL_APPS = [
     'session_authentication',
     'custom_permission',
     'fn_based_authentication',
+    'token_authentication'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
