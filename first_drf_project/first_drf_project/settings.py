@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-luf6mq#57)rqf7i60#@f(3=v#e^1o8twp96%g(%eocq+=9usx1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -57,6 +57,7 @@ EXTERNAL_APPS = [
     'custom_token_auth',
     'model_viewsets',
     'signal_authentication',
+    'final_token_auth'
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS

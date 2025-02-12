@@ -11,7 +11,7 @@ def create_auth_token(sender, instance = None, created = False, **kwargs):
         Token.objects.create(user = instance)
 
 # Create your models here.
-class Student(models.Model):
+class StudentSignal(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
     roll = models.IntegerField()
