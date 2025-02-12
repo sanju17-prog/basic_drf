@@ -53,7 +53,8 @@ EXTERNAL_APPS = [
     'session_authentication',
     'custom_permission',
     'fn_based_authentication',
-    'token_authentication'
+    'token_authentication',
+    'custom_token_auth',
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS

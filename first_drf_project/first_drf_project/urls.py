@@ -31,5 +31,6 @@ urlpatterns = [
     path('custom_perm/', include("custom_permission.urls")),
     path('fn_based_auth/', include("fn_based_authentication.urls")),
     path('token_auth/', include("token_authentication.urls")),
+    path('custom_token_auth/', include("custom_token_auth.urls")),
     path('admin/', admin.site.urls),
 ]

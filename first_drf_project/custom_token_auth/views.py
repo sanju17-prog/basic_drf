@@ -1,6 +1,6 @@
 from django.shortcuts import render
+from token_authentication.serializers import StudentSerializer
 from students.models import Student
-from .serializers import StudentSerializer
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.permissions import DjangoModelPermissionsOrAnonReadOnly
 from rest_framework.viewsets import ModelViewSet
