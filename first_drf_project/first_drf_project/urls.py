@@ -34,5 +34,6 @@ urlpatterns = [
     path('custom_token_auth/', include("custom_token_auth.urls")),
     path('signal_auth/', include("signal_authentication.urls")),
     path('final_auth/', include("final_token_auth.urls")),
+    path('custom_auth/', include("custom_auth.urls")),
     path('admin/', admin.site.urls),
 ]
