@@ -55,6 +55,8 @@ EXTERNAL_APPS = [
     'fn_based_authentication',
     'token_authentication',
     'custom_token_auth',
+    'model_viewsets',
+    'signal_authentication',
 ]
 
 INSTALLED_APPS += EXTERNAL_APPS
